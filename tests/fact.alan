@@ -1,0 +1,15 @@
+source fact
+function factorial(integer i) to integer
+begin
+	if i = 1 then
+		leave 1
+	else
+		leave factorial(i - 1)*i
+	end
+end
+
+begin
+	integer n;
+	get n;
+	put "\n".factorial(n)."\n"
+end
