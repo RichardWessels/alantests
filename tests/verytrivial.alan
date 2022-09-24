@@ -1,0 +1,12 @@
+source trivial
+function beans()
+begin
+	relax
+end
+begin
+	integer i, a;
+	i := 2;
+	a := 1;
+	put "beans\n";
+	relax
+end
