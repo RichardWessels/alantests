@@ -1,0 +1,24 @@
+source gcd
+function G(integer a, integer b) to integer
+begin
+	integer r;
+	r := b;
+	while r <> 0 do
+		r := a rem b;
+		if r <> 0 then
+			a := b;
+			b := r
+		end
+	end;
+
+	leave b
+end
+
+begin
+	integer a, b;
+	put "Please enter a number (a)\n";
+	get a;
+	put "Please enter another number (b)\n";
+	get b;
+	put "The GCD of a is: ".G(a, b)."\n"  
+end
