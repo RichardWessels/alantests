@@ -1,0 +1,54 @@
+source multifunc
+function func3(boolean a, boolean b) to boolean
+begin
+	leave a
+end
+
+function func4(integer a, integer b, boolean c, integer d)
+begin
+	put "a=".a." b=".b." c=".c." d=".d
+end
+
+function func1(integer a, boolean b) to boolean
+begin
+	if (a < 5) and (b) then
+		leave true
+	end;
+
+	put a.b."\n";
+
+	leave false
+end
+
+function func2(integer array a)
+begin
+	integer i;
+	boolean b;
+	b := 5 = 5;
+	put "this is b".b."\n";
+	i := 0;
+	while func1(i, b) do
+		a[i] := i*i;
+		i := i + 1
+	end
+end
+
+begin
+	boolean a, b;
+	integer array arr;
+	integer i;
+	a := func3(false, true);
+	b := func3(true, false);
+	put "a=".a."b=".b."\n";
+
+	call func4(1,2,true,4);
+
+	arr := array 10;
+	call func2(arr);
+
+	i := 0;
+	while i < 10 do
+		put arr[i]."\n";
+		i := i + 1
+	end
+end
