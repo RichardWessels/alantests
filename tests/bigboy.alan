@@ -1,0 +1,64 @@
+source trying_to_test_everything
+
+function func_1()
+begin
+	relax
+end
+
+function func_2(integer a1) to boolean
+begin
+	integer a2;
+	a2 := a2
+end
+
+function func_3(boolean a1, integer a2, boolean array a3, integer array a4) to boolean
+begin
+	boolean a5, a6, a7;
+	boolean array a8, a9;
+	a1[2] := 2;
+	a8[-a4[4]] := (not true and false or (false) <> func_2(a2));
+	call func_1();
+	if -(a4[-a2 / a4[-a2 rem 7/4]]) >= 0 then
+		relax
+	elsif not not not false = true or false and not false then
+		get a3[a2 - a2];
+		put "apple".5/5 rem 5/5+(a4[-10]).func_2(a2 * (5*0));
+		while false and not false <> true or true and true do
+			while ((((4) rem 1/(3))*2) >= 6*6) and false do
+				relax
+			end
+		end
+	end 
+end
+
+function func_4() to integer
+begin
+	leave 5
+end
+
+function func_5() to boolean array
+begin
+	integer array a1;
+	relax
+end
+
+function func_6(boolean a1) to integer array
+begin
+	relax
+end
+
+function func_7() to integer array
+begin
+	leave func_6(func_3(not (not (func_2(func_4()))), func_4() - 2 * ((func_4())), func_5(), func_7()))
+end
+
+function func_8(boolean a1, boolean a2) to boolean array
+begin
+	boolean array a3;
+	a3 := func_8(func_3(func_2(func_4()), func_4(), func_8(a3[4], a3[2 - 2] = true), func_7()), true)
+	{func_7(func_2(3), func_2(3)) := a3} 
+end
+
+begin
+	relax
+end

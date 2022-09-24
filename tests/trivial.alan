@@ -1,0 +1,35 @@
+source trivial
+begin
+	boolean a;
+	integer array arr;
+	integer b, c, d;
+	put "eheheh\n";
+	arr := array 10;
+	arr[0] := 1;
+	get arr[0];
+	b := 3;
+	d := 1;
+	a := true;
+	c := 1;
+	if b < 1 then
+		b := 4
+	elsif b < 1 then
+		b := 5
+	elsif b > 1 then
+		if false then
+			b := 7
+		else
+			while b < 10 do
+				d := 0;
+				while d < 10 do
+					c := c + 1;
+					d := d + 1
+				end;
+				b := b + 1
+			end
+		end
+	else
+		b := 6
+	end;
+	put "\n".true.false.a.b." ".c." arr[0]=".arr[0]."\n\n"
+end

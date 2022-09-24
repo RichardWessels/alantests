@@ -1,0 +1,17 @@
+source trivial
+function func(boolean array a)
+begin
+	a[0] := false
+end
+begin
+	integer beans;
+	boolean array n, x;
+	integer array arr;
+	beans := 2;
+	n := array 5;
+	x := array 6;
+	arr := array 2;
+	get x[0];
+	call func(x);
+	put x[0]." beans=".beans."\n"
+end
