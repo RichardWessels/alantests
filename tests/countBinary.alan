@@ -1,0 +1,36 @@
+source countBinary
+
+function countbin(boolean array arr, integer array_size) to integer
+begin
+	integer i, sum;
+	
+	sum := 0;
+	i := 0;
+	while i < array_size do
+		if arr[i] then
+			sum := sum + 1
+		end;
+		i := i + 1
+	end;
+
+	leave sum
+end
+
+begin
+	integer n,i;
+	boolean array arr;
+
+	put "How long do you want the array to be: ";
+	get n;
+	
+	arr := array n;
+	put "\nEnter booleans:\n";
+	
+	i := 0;
+	while i < n do
+		get arr[i];
+		i := i + 1
+	end;
+
+	put "There are ".countbin(arr, n)." true values\n"
+end
