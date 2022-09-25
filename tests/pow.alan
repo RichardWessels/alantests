@@ -1,0 +1,32 @@
+source pow
+{   power   }
+function power(integer x, integer n) to integer
+begin
+	integer z;
+	z := 1;
+	
+	while (n > 0) do
+		if ((n rem 2) = 1) then
+			n := n - 1;
+			z := z * x
+		else 
+			n := n / 2;
+			x := x * x
+		end
+	end;
+
+	leave z
+end
+
+{   main   }
+begin 
+	integer x, n;
+	put "insert x\n";
+	get x;
+	put "insert n\n";
+	get n;
+
+	put "THE POWER IS \n";
+	put power(x, n)."\n"
+	
+end
